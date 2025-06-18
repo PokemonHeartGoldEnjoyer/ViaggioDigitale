@@ -2,16 +2,16 @@
       <!-- Card Container with Image Background -->
       <div class="relative flex flex-row items-center rounded-[40px] sm:rounded-[70px] p-4 sm:p-12 shadow-lg w-full max-w-[95vw] sm:w-[800px] sm:h-[600px] h-[400px] bg-cover bg-center" style="background: url('<%= background %>') center center / cover no-repeat;">
             <!-- White overlay with 30% opacity -->
-            <div class="absolute inset-0 bg-white opacity-50 rounded-[40px] sm:rounded-[70px] pointer-events-none"></div>
+            <div class="absolute inset-0 bg-white opacity-35 rounded-[40px] sm:rounded-[70px] pointer-events-none"></div>
             <!-- Content and Image Side by Side -->
             <div class="relative z-10 flex flex-col sm:flex-row w-full justify-between items-center">
                   <!-- Gradient Image Section (Left) -->
                   <div class="flex-shrink-0 sm:mr-8 relative z-10 order-1 sm:order-1">
-                        <div class="w-[180px] h-[180px] sm:w-[350px] sm:h-[350px] rounded-[30px] sm:rounded-[50px] flex items-center justify-center" style="background: linear-gradient(180deg, #000 0%, #228b5a 60%, #2ee59d 100%);">
+                        <div class="w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] rounded-[40px] sm:rounded-[40px] flex items-center justify-center overflow-hidden">
                               <img
                                     src="<%= src %>"
                                     alt="<%= alt %>"
-                                    class="w-[140px] h-[100px] sm:w-[300px] sm:h-[230px] object-contain"
+                                    class="w-full h-full object-cover rounded-[40px] sm:rounded-[40px]"
                               />
                         </div>
                   </div>

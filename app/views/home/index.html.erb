@@ -1,7 +1,13 @@
 <body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #ffb347 0%, #ffeaa7 20%, #ff7675 70%); background-size: cover; background-repeat: no-repeat;">
     <div class='flex flex-col items-center justify-center w-full'>
         <!-- Privacy -->
-        <%= render partial: 'components/index/privacy'  %>
+        <%= 
+            render partial: 'components/index/privacy',
+            locals: {
+                title: 'GlobeXplore',
+                text: "Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare del sito e assistere nelle nostre attività di marketing.",
+            }
+        %>
         <div class='flex flex-col items-center justify-center space-y-30 w-full'>
             <!-- Navbar -->
             <%= render partial: 'components/index/navbar'  %>
@@ -20,68 +26,85 @@
             <!-- Card Row 1 -->
             <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-5">
                 <!-- Card Right 1 -->
-                <%= 
-                    render partial: 'components/index/carddx',
-                    locals: {
-                        alt: 'Spagna',
-                        src: '/images/carddx.png',
-                        title: 'SPAIN',
-                        text: 'Sole, colori, sapori e tradizioni ti aspettano tra le strade di Barcellona, le spiagge andaluse e i mercati vivaci di Madrid. Un viaggio pieno di calore, musica e meraviglia. ¡Pronto a partire?',
-                        background: '/images/spainflag.jpg'
-                    }
-                %>
+                <%= link_to '/spain' do %>
+                  <%= 
+                      render partial: 'components/index/carddx',
+                      locals: {
+                          alt: 'Spagna',
+                          src: '/images/spaincard.jpg',
+                          title: 'SPAIN',
+                          text: 'Sole, colori, sapori e tradizioni ti aspettano tra le strade di Barcellona, le spiagge andaluse e i mercati vivaci di Madrid. Un viaggio pieno di calore, musica e meraviglia. ¡Pronto a partire?',
+                          background: '/images/spainflag.jpg'
+                      }
+                  %>
+                <% end %>
                 <!-- Card Left 1 -->
-                <%= 
-                    render partial: 'components/index/cardsx',
-                    locals: {
-                        alt: 'Francia',
-                        src: '/images/cardsx.png',
-                        title: 'FRANCE',
-                        text: 'Tra i boulevard di Parigi, i vigneti della Provenza e i profumi della Costa Azzurra, ogni angolo della Francia racconta eleganza, gusto e bellezza. Pronto a lasciarti ispirare?',
-                        background: '/images/franceflag.jpg'
-                    }
-                %>
+                <%= link_to '/france' do %>
+                  <%= 
+                      render partial: 'components/index/cardsx',
+                      locals: {
+                          alt: 'Francia',
+                          src: '/images/francecard.jpg',
+                          title: 'FRANCE',
+                          text: 'Tra i boulevard di Parigi, i vigneti della Provenza e i profumi della Costa Azzurra, ogni angolo della Francia racconta eleganza, gusto e bellezza. Pronto a lasciarti ispirare?',
+                          background: '/images/franceflag.jpg'
+                      }
+                  %>
+                <% end %>
             </div>
             <!-- Card Row 2 -->
             <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-8 mt-5">
                 <!-- Card Right 2 -->
-                <%= 
-                    render partial: 'components/index/carddx',
-                    locals: {
-                        alt: 'Germania',
-                        src: '/images/carddx.png',
-                        title: 'GERMANIA',
-                        text: 'Città moderne, castelli da fiaba e natura sorprendente: la Germania è il mix perfetto tra storia, innovazione e tradizione. Un viaggio autentico, tutto da esplorare.',
-                        background: '/images/germanyflag.jpg'
-                    }
-                %>
+                <%= link_to '/germany' do %>
+                  <%= 
+                      render partial: 'components/index/carddx',
+                      locals: {
+                          alt: 'Germania',
+                          src: '/images/germanycard.jfif',
+                          title: 'GERMANY',
+                          text: 'Città moderne, castelli da fiaba e natura sorprendente: la Germania è il mix perfetto tra storia, innovazione e tradizione. Un viaggio autentico, tutto da esplorare.',
+                          background: '/images/germanyflag.jpg'
+                      }
+                  %>
+                <% end %>
                 <!-- Card Left 2 -->
-                <%= 
-                    render partial: 'components/index/cardsx',
-                    locals: {
-                        alt: 'Albania',
-                        src: '/images/cardsx.png',
-                        title: 'ALBANIA',
-                        text: 'Spiagge cristalline, montagne selvagge e ospitalità sincera. L’Albania è una perla nascosta del Mediterraneo, ideale per chi cerca autenticità e avventura.',
-                        background: '/images/albaniaflag.jpg'
-                    }
-                %>
+                <%= link_to '/albania' do %>
+                  <%= 
+                      render partial: 'components/index/cardsx',
+                      locals: {
+                          alt: 'Albania',
+                          src: '/images/albaniacard.jpg',
+                          title: 'ALBANIA',
+                          text: 'Spiagge cristalline, montagne selvagge e ospitalità sincera. L’Albania è una perla nascosta del Mediterraneo, ideale per chi cerca autenticità e avventura.',
+                          background: '/images/albaniaflag.jpg'
+                      }
+                  %>
+                <% end %>
             </div>
             <!-- Card Center 1 -->
             <div class="flex justify-center mt-5">
-                <%= 
-                    render partial: 'components/index/cardct',
-                    locals: {
-                        alt: 'Grecia',
-                        src: '/images/cardsx.png',
-                        title: 'GREECE',
-                        text: 'Tra isole da sogno, templi antichi e tramonti infuocati, la Grecia è pura emozione. Cultura, mare e magia ti aspettano sotto il sole dell’Egeo.',
-                        background: '/images/greeceflag.jpg'
-                    }
-                %>
+                <%= link_to '/greece' do %>
+                  <%= 
+                      render partial: 'components/index/cardct',
+                      locals: {
+                          alt: 'Grecia',
+                          src: '/images/greececard.jpeg',
+                          title: 'GREECE',
+                          text: 'Tra isole da sogno, templi antichi e tramonti infuocati, la Grecia è pura emozione. Cultura, mare e magia ti aspettano sotto il sole dell’Egeo.',
+                          background: '/images/greeceflag.jpg'
+                      }
+                  %>
+                <% end %>
             </div>
             <!-- Titolo -->
-            <%= render partial: 'components/index/titolo' %>
+            <%= 
+                render partial: 'components/index/titolo',
+                locals: {
+                    titolo1: 'PIÙ CHE DESTINAZIONI,',
+                    titolo2: ' CREIAMO RICORDI.',
+                    button: 'Inizia il tuo viaggio'
+                } 
+            %>
             <!-- Footer -->
             <%= 
                 render partial: 'components/index/footer',
