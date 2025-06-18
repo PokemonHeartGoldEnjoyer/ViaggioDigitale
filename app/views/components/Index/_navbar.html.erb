@@ -1,0 +1,52 @@
+<div class="w-full flex justify-center fixed top-0 left-0 z-50 bg-transparent bg-opacity-90 backdrop-blur-lg">
+    <div class="flex flex-row items-center w-full max-w-4xl p-6 justify-between">
+        <!-- Logo (left) -->
+        <a href='/home'>
+            <%= image_tag '/images/airplanelogo.png', class:"w-20 items-start left-0 ml-3" %>
+        </a>
+        <!-- Main Links: hidden on small screens -->
+        <div class='hidden sm:inline-block flex-1 text-center space-x-6 text-md font-bold text-black'>
+            <%= link_to 'Spain', spain_path, class: '' %>
+            <%= link_to 'France', france_path, class: '' %>
+            <%= link_to 'Germany', germany_path, class: '' %>
+            <%= link_to 'Albania', albania_path, class: '' %>
+            <%= link_to 'Greece', greece_path, class: '' %>
+        </div>
+        <!-- Middle Hamburger: visible only on small screens -->
+        <div class="relative sm:hidden">
+            <button id="mobile-menu-button" type="button">
+                <svg class="justify-center items-center w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                </svg>
+            </button>
+            <div id="mobile-menu-dropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50 hidden">
+                <div class="py-1 flex flex-col text-left">
+                    <%= link_to 'Spain', spain_path, class: 'block px-4 py-2 hover:bg-gray-100 text-black' %>
+                    <%= link_to 'France', france_path, class: 'block px-4 py-2 hover:bg-gray-100 text-black' %>
+                    <%= link_to 'Germany', germany_path, class: 'block px-4 py-2 hover:bg-gray-100 text-black' %>
+                    <%= link_to 'Albania', albania_path, class: 'block px-4 py-2 hover:bg-gray-100 text-black' %>
+                    <%= link_to 'Greece', greece_path, class: 'block px-4 py-2 hover:bg-gray-100 text-black' %>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const btn = document.getElementById("mobile-menu-button");
+                const menu = document.getElementById("mobile-menu-dropdown");
+                btn.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                    menu.classList.toggle("hidden");
+                });
+                document.addEventListener("click", function(e) {
+                    if (!btn.contains(e.target)) {
+                        menu.classList.add("hidden");
+                    }
+                });
+            });
+        </script>
+        <!-- Log In Button (right) -->
+        <div>
+            <%= link_to 'Log In', '#', class: 'bg-[#e17055] text-white hover:bg-orange-300 focus:ring-4 focus:ring-gray-300 font-medium rounded-2xl text-sm px-5 py-2.5 text-center' %>
+        </div>
+    </div>
+</div>

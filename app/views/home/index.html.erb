@@ -1,0 +1,87 @@
+<body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #ffb347 0%, #ffeaa7 20%, #ff7675 70%); background-size: cover;">
+    <div class='flex flex-col items-center justify-center w-full'>
+        <!-- Privacy -->
+        <%= render partial: 'components/Index/privacy'  %>
+        <div class='flex flex-col items-center justify-center space-y-30 w-full'>
+            <!-- Navbar -->
+            <%= render partial: 'components/Index/navbar'  %>
+            <!-- Hero -->
+            <%= 
+                render partial: 'components/Index/landinghero',
+                locals: {
+                    alt: 'Viaggio per il Sud Europa',
+                    src: '/images/travelinghero.jpg',
+                    link: '#',
+                    title: "SUD EUROPA",
+                    text: "Lasciati guidare nel cuore del Mediterraneo, dove il sole abbraccia ogni giorno, la storia si fonde con la vita di strada, e ogni momento diventa un’esperienza da ricordare.",
+                    bottone: 'Prenota ora'
+                }
+            %>
+            <div class="flex flex-row items-stretch justify-center w-full space-x-8">
+                <!-- Card Left 1 -->
+                <%= 
+                    render partial: 'components/Index/cardsx',
+                    locals: {
+                        alt: 'Image Image',
+                        src: '/images/cardsx.png',
+                        title: 'MAKE YOUR GROUP CHATS MORE FUN',
+                        text: 'Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.',
+                    }
+                %>
+                <!-- Card Right 1 -->
+                <%= 
+                    render partial: 'components/Index/carddx',
+                    locals: {
+                        alt: 'Image Image',
+                        src: '/images/carddx.png',
+                        title: 'STREAMING LIKE YOU’RE IN THE SAME ROOM',
+                        text: 'Hight quality and low latency streaming makes it feel like you’re hanging on the couch with youre friends while playing a game, watch shows, looking at photos, or idk doing homework or something.',
+                    }
+                %>
+            </div>
+            <!-- Titolo -->
+            <%= render partial: 'components/Index/titolo' %>
+            <!-- Footer -->
+            <%= 
+                render partial: 'components/Index/footer',
+                locals: {
+                    footer: [ 
+                        { title: "Product"},
+                        { text: "Download" },
+                        { text: "Nitro" },
+                        { text: "Status" },
+                        { text: "App Directory" },
+
+                        {title1: "Company"},
+                        { text1: "About" },
+                        { text1: "Jobs" },
+                        { text1: "Brand" },
+                        { text1: "Newsroom" },
+
+                        { title2: "Resources" },
+                        { text2: "College" },
+                        { text2: "Support" },
+                        { text2: "Safety" },
+                        { text2: "Blog" },
+                        { text2: "StreamKit" },
+                        { text2: "Creators" },
+                        { text2: "Community" },
+                        { text2: "Developers" },
+                        { text2: "Quests" },
+                        { text2: "Official 3rd Party Merch" },
+                        { text2: "Feedback" },
+
+                        { title3: "Policies" },
+                        { text3: "Terms" },
+                        { text3: "Privacy" },
+                        { text3: "Cookie Settings" },
+                        { text3: "Guidelines" },
+                        { text3: "Acknowledgements" },
+                        { text3: "Licenses" },
+                        { text3: "Company Information" },
+                    ]
+                }
+            %>
+        </div>
+    </div>
+</body>

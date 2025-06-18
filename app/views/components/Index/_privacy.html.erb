@@ -1,0 +1,24 @@
+<div id="privacy-banner" style="position:fixed; bottom:0; left:0; width:100vw; z-index:9999;" class="bg-white text-gray-900 shadow-[0_-2px_8px_rgba(0,0,0,0.08)] px-8 py-4 flex justify-between items-center">
+    <div class="flex flex-col space-y-2">
+        <h1 class="text-start font-bold text-xl">GlobeXplore</h1>
+        <a class="text-start ">
+            Cliccando su "Accetta tutti i cookie", l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare del sito e assistere nelle nostre attività di marketing.
+        </a>
+    </div>
+    <div class="flex gap-5 items-center">
+        <a href="/privacy" class="text-blue-500 underline ml-2">Impostazioni Cookie</a>
+        <button onclick="document.getElementById('privacy-banner').style.display='none'"
+            class="bg-black text-white border-none rounded-2xl px-4 py-2 cursor-pointer font-medium">
+            Rifiuta tutti
+        </button>
+        <button onclick="document.getElementById('privacy-banner').style.display='none'"
+            class="bg-black text-white border-none rounded-2xl px-4 py-2 cursor-pointer font-medium">
+            Accetta tutti i cookie
+        </button>
+        <span class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 cursor-pointer" onclick="document.getElementById('privacy-banner').style.display='none'"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </span>
+    </div>
+</div>
