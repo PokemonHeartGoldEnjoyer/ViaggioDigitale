@@ -16,7 +16,7 @@
                 render partial: 'components/extras/landinghero',
                 locals: {
                     alt: 'Viaggio per la Germania',
-                    src: '/images/spagna.jpg',
+                    src: '/images/germanycard.jpg',
                     link: '#',
                     title: "GERMANIA",
                     text: "Viaggiare in Germania è un incontro perfetto tra tradizione e innovazione: puoi perderti tra i castelli da fiaba della Baviera e ritrovarti in una Berlino vibrante e creativa, dove ogni strada racconta storie di rinascita e cultura.",
@@ -29,11 +29,12 @@
                 <%= 
                     render partial: 'components/extras/carddx',
                     locals: {
-                        alt: 'Barcellona',
-                        src: '/images/barcellonacard.jpeg',
+                        alt: 'Aereoporto di Berlino',
+                        src: '/images/berlinaerportcard.jpg',
                         title: '',
                         text:"
-                        Giorno 1 - 15/03/2025: Arrivo a Barcellona 14:00 - Arrivo all'Aeroporto di Barcellona sbarco e ritiro bagagli. 14:30 - Trasporto all'Airbnb per il Sud fino a Collblanc, poi cambia con quello per Diagonal e cammina fino al tuo Airbnb (opzioni consigliate: Casa Gracia o appartamenti in zona Eixample). 15:30 Arrivo e check-in al tuo Airbnb. 17:00 - Passeggiata a Gracia Esplora il quartiere di Gracia, famoso per piazze ecaffè locali. 20:00 - Cena economica
+                            Giorno 1 – Arrivo e prime esplorazioni
+                            Dopo l’arrivo all’aeroporto di Berlino e il trasferimento in treno verso Alexanderplatz, si effettua il check-in nell’Airbnb. Nel pomeriggio si visita la vivace Alexanderplatz e la Torre della Televisione.
                         ",
                         background: '/images/'
                     }
@@ -42,35 +43,34 @@
                 <%= 
                     render partial: 'components/extras/cardsx',
                     locals: {
-                        alt: 'Sagrada Familia',
-                        src: '/images/sagradafamiliacard.jpg',
+                        alt: 'Under Linden',
+                        src: '/images/underlindencard.jpg',
                         title: '',
                         text:'
-                        Giorno 2 - 16/03/2025: Sagrada Familia e città 08:00 - Colazione Colazione in un caffè locale. 09:00 - Visita alla Sagrada Familia (ingresso 26€, visita di 1,5h). 11:00 - Passeggiata a Eixample Esplora il quartiere di Eixample e Passeig de Gràcia. 13:00 - Pranzo economico Pranzo a Cervecería 100 Montaditos, piatti tipici spagnoli economici. 14:30 - Visita al Camp Nou Metropolitana e Les Corts, visita al Museo del Camp Nou (12€, 1-1.5h). 16:30 - Tempo libero fai shopping in zona Plaza Cataluña 20:00 - Cena
+                            Passeggiata e cena tipica
+                            In serata, passeggiata lungo Unter den Linden fino alla Porta di Brandeburgo. La giornata si conclude con una cena tradizionale tedesca presso il ristorante storico Zur letzten Instanz.
                         ',
                         background: '/images/'
                     }
                 %>
             </div>
-            <!-- Card Center 1 -->
+             <!-- Card Center 1 -->
             <div class="flex justify-center mt-5">
                 <%= 
                     render partial: 'components/extras/cardct',
                     locals: {
-                        alt: 'Parco Güell',
-                        src: '/images/parcoguellcard.jpg',
+                        alt: 'Reichstag',
+                        src: '/images/reichstangcard.jpg',
                         title: '',
                         text: "
-                            Giorno 3 – 17/03/2025:
-                            Giornata dedicata all’esplorazione di Barcellona con i mezzi pubblici. Dopo colazione in un caffè locale, passeggiata lungo La Rambla e visita al Mercato della Boqueria. In tarda mattinata, visita al Parco Güell. Pranzo sul mare al ristorante La Mar Salada. Nel pomeriggio, passeggiata nel Barrio Gótico con visita alla Cattedrale. Rientro in Airbnb e cena finale con tapas alla Cervecería Catalana.
-                            Giorno 4 – 18/03/2025:
-                            Colazione in Airbnb, check-out e trasferimento in aeroporto.
+                            Giorno 2 – Cultura e vita urbana
+                            Dopo colazione, si visitano il Memoriale per gli Ebrei e il Reichstag. Seguono una passeggiata nel Tiergarten, pranzo veloce da Mustafa’s, visita alla East Side Gallery e serata nel quartiere di Kreuzberg, con cena e musica dal vivo al Musik & Frieden.
                             ",
                         background: '/images/'
                     }
                 %>
             </div>
-             <!-- Titolo -->
+            <!-- Titolo -->
             <%= 
                 render partial: 'components/extras/titolo',
                 locals: {
@@ -85,11 +85,11 @@
                 <%= 
                     render partial: 'components/extras/carddx',
                     locals: {
-                        alt: 'Antonì Gaudì',
-                        src: '/images/antonigaudicard.jpg',
-                        title: 'Antonì Gaudì',
+                        alt: 'Porta Di Brandeburgo',
+                        src: '/images/branderburgdoorcard.jpg',
+                        title: 'Porta Di Brandeburgo',
                         text: '
-                        Antoni Gaudí è stato un architetto spagnolo di cultura catalana. Massimo esponente del modernismo catalano, pur essendo la personalità meno organica a tale movimento artistico di cui comunque condivideva i presupposti ideologici e tematici, li ha completati con una ispirazione personale basata principalmente su forme naturali.
+                        Simbolo della riunificazione tedesca, la Porta di Brandeburgo è un must-see per ogni visitatore di Berlino. Ammira questa maestosa porta e assapora la storia della città.
                         ',
                         background: '/images/'
                     }
@@ -98,15 +98,97 @@
                 <%= 
                     render partial: 'components/extras/cardsx',
                     locals: {
-                        alt: 'Sagrada Familia',
-                        src: '/images/sagradafamiliacard2.jpg',
-                        title: 'Sagrada Familia',
+                        alt: 'Reichstag',
+                        src: '/images/reichstagcard.jpg',
+                        title: 'Reichstag',
                         text:"
-                        Il Tempio Espiatorio della Sacra Famiglia (in spagnolo Templo Expiatorio de la Sagrada Familia; in catalano Temple Expiatori de la Sagrada Família) è una basilica minore spagnola di culto cattolico che si trova a Barcellona, capitale della Catalogna nonché la chiesa più alta al mondo con i suoi 172 metri d'altezza.
+                        Sede del Parlamento tedesco, il Reichstag è un edificio storico con una cupola di vetro panoramica che offre una vista mozzafiato sulla città.
                         ",
                         background: '/images/'
                     }
                 %>
+            </div>
+            <!-- Card Row 3 -->
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-8 mt-5">
+                <!-- Card Right 3 -->
+                <%= 
+                    render partial: 'components/extras/carddx',
+                    locals: {
+                        alt: 'Isola dei Musei',
+                        src: '/images/isolamuseicard.jfif',
+                        title: 'Isola dei Musei',
+                        text: "
+                            Un'isola interamente dedicata all'arte e alla storia. Esplora i cinque musei che ospitano collezioni di arte antica, egizia e islamica.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+                <!-- Card Left 3 -->
+                <%= 
+                    render partial: 'components/extras/cardsx',
+                    locals: {
+                        alt: 'Muro di Berlino',
+                        src: '/images/muroberlinocard.jpg',
+                        title: 'Muro di Berlino',
+                        text:"
+                        Scopri i resti del Muro di Berlino, simbolo della divisione della città. Visita la East Side Gallery, la più lunga sezione del muro rimasta in piedi, decorata con opere d'arte.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Card Row 4 -->
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-8 mt-5">
+                <!-- Card Right 4 -->
+                <%= 
+                    render partial: 'components/extras/carddx',
+                    locals: {
+                        alt: 'Alexanderplatz',
+                        src: '/images/alexanderplatzcard.jpg',
+                        title: 'Alexanderplatz',
+                        text: "
+                            Una delle piazze più grandi e trafficate di Berlino. Ammira la Fernsehturm, la torre televisiva, e immergiti nell'atmosfera vivace della città.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+                <!-- Card Left 4 -->
+                <%= 
+                    render partial: 'components/extras/cardsx',
+                    locals: {
+                        alt: 'Tiergarten',
+                        src: '/images/tiergartencard.jpg',
+                        title: 'Tiergarten',
+                        text:"
+                        Un vasto parco nel cuore di Berlino, perfetto per una passeggiata rilassante o un picnic. Scopri il Victory Column e altri monumenti storici.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Titolo -->
+            <%= 
+                render partial: 'components/extras/titolo',
+                locals: {
+                    titolo1: 'DOVE VUOI ANDARE?',
+                    titolo2: ' NOI CI SIAMO GIA STATI... PER TE.',
+                    button: 'Inizia un nuovo viaggio'
+                } 
+            %>
+            <!-- Card Center 2 -->
+            <div class="flex justify-center mt-5">
+                <%= link_to '/berlino' do %>
+                    <%= 
+                        render partial: 'components/extras/cardct',
+                        locals: {
+                            alt: 'Berlino techno',
+                            src: '/images/berlinotechno.jpg',
+                            title: ' BERLINO',
+                            text: "Beats e Musica techno",
+                            background: '/images/berlinoflag.png'
+                        }
+                    %>
+                <% end %>
             </div>
             <!-- Footer -->
             <%= 

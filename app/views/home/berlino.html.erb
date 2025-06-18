@@ -1,0 +1,94 @@
+<body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #000000 2%, #DD0000 20%, #FFCC00 100%); background-size: cover; background-repeat: no-repeat;">
+    <div class='flex flex-col items-center justify-center w-full'>
+        <!-- Privacy -->
+        <%= 
+            render partial: 'components/privacy',
+            locals: {
+                title: 'GlobeXplore',
+                text: "Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare del sito e assistere nelle nostre attività di marketing.",
+            }
+        %>
+        <div class='flex flex-col items-center justify-center space-y-30 w-full'>
+            <!-- Navbar -->
+            <%= render partial: 'components/navbar'  %>
+            <!-- Hero -->
+            <%= 
+                render partial: 'components/extras/landinghero',
+                locals: {
+                    alt: 'Viaggio per la Berlino',
+                    src: '/images/berlinotechno.jpg',
+                    link: '#',
+                    title: "BERLINO",
+                    text: "Berlino non è solo una città: è un battito costante, un luogo dove la storia parla tra le strade e l’arte esplode sui muri. È un mix affascinante di passato e futuro, dove ogni angolo racconta un cambiamento.",
+                    bottone: 'Prenota ora'
+                }
+            %>
+            <!-- Titolo -->
+            <%= 
+                render partial: 'components/extras/titolo',
+                locals: {
+                    titolo1: 'PIÙ CHE DESTINAZIONI,',
+                    titolo2: ' CREIAMO RICORDI.',
+                    button: 'Inizia un nuovo viaggio'
+                } 
+            %>
+            <!-- Card Row 1 -->
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-5">
+                <!-- Card Right 1 -->
+                <%= 
+                    render partial: 'components/extras/carddx',
+                    locals: {
+                        alt: 'Tresor',
+                        src: '/images/tresorcard.jpg',
+                        title: 'Tresor',
+                        text:"
+                           Il Tresor è uno storico club techno di Berlino, famoso per la sua atmosfera industriale e il ruolo centrale nella scena elettronica europea.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+                <!-- Card Left 1 -->
+                <%= 
+                    render partial: 'components/extras/cardsx',
+                    locals: {
+                        alt: 'Il sisyphos',
+                        src: '/images/sisyphoscard.jpg',
+                        title: 'Il sisyphos',
+                        text:"
+                           Il Sisyphos è un celebre club all’aperto di Berlino, noto per le sue feste techno non stop e l’atmosfera da festival in un'ex fabbrica industriale.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+             <!-- Card Center 1 -->
+            <div class="flex justify-center mt-5">
+                <%= 
+                    render partial: 'components/extras/cardct',
+                    locals: {
+                        alt: 'Kreuzberg',
+                        src: '/images/kreuzbergcard.jpg',
+                        title: 'Kreuzberg',
+                        text: "
+                            Kreuzberg è l’anima creativa di Berlino: arte di strada, caffè alternativi e cultura multiculturale che pulsa a ogni angolo.
+                            ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Footer -->
+            <%= 
+                render partial: 'components/footer',
+                locals: {
+                    text: 'GlobeXplore, Via XIII Martiri, 86, 30027 San Donà di Piave VE, Italia',
+                    link: 'https://www.donboscosandona.it',
+                    srcfacebook: '/images/facebook.png',
+                    facebook: 'https://www.facebook.com/donboscosandona',
+                    srcinstagram: '/images/instagram.png',
+                    instagram: 'https://www.instagram.com/donboscosandona/',
+                    logo: '/images/airplanelogo.png',
+                }
+            %>
+        </div>
+    </div>
+</body>

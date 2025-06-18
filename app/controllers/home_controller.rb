@@ -11,4 +11,9 @@ class HomeController < ApplicationController
     end
     def Greece
     end
+
+    def Berlino
+    end
+    def Prenotazione
+    end
 end

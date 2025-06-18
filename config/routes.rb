@@ -7,4 +7,7 @@ Rails.application.routes.draw do
   get '/germany', to: 'home#germany', as: 'germany'
   get '/albania', to: 'home#albania', as: 'albania'
   get '/greece', to: 'home#greece', as: 'greece'
+
+  get '/berlino', to: 'home#berlino', as: 'berlino'
+  get '/prenotazione', to: 'home#prenotazione', as: 'prenotazione'
 end
