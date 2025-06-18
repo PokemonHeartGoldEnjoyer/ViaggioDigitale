@@ -1,4 +1,4 @@
-<body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #ffb347 0%, #ffeaa7 20%, #ff7675 70%); background-size: cover;">
+<body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #ffb347 0%, #ffeaa7 20%, #ff7675 70%); background-size: cover; background-repeat: no-repeat;">
     <div class='flex flex-col items-center justify-center w-full'>
         <!-- Privacy -->
         <%= render partial: 'components/Index/privacy'  %>
@@ -17,17 +17,8 @@
                     bottone: 'Prenota ora'
                 }
             %>
+            <!-- Card Row 1 -->
             <div class="flex flex-row items-stretch justify-center w-full space-x-8">
-                <!-- Card Left 1 -->
-                <%= 
-                    render partial: 'components/Index/cardsx',
-                    locals: {
-                        alt: 'Image Image',
-                        src: '/images/cardsx.png',
-                        title: 'MAKE YOUR GROUP CHATS MORE FUN',
-                        text: 'Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.',
-                    }
-                %>
                 <!-- Card Right 1 -->
                 <%= 
                     render partial: 'components/Index/carddx',
@@ -36,9 +27,58 @@
                         src: '/images/carddx.png',
                         title: 'STREAMING LIKE YOU’RE IN THE SAME ROOM',
                         text: 'Hight quality and low latency streaming makes it feel like you’re hanging on the couch with youre friends while playing a game, watch shows, looking at photos, or idk doing homework or something.',
+                        background: '/images/travelinghero.jpg'
+                    }
+                %>
+                <!-- Card Left 1 -->
+                <%= 
+                    render partial: 'components/Index/cardsx',
+                    locals: {
+                        alt: 'Image Image',
+                        src: '/images/cardsx.png',
+                        title: 'MAKE YOUR GROUP CHATS MORE FUN',
+                        text: 'Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.',
+                        background: '/images/travelinghero.jpg'
                     }
                 %>
             </div>
+            <!-- Card Row 2 -->
+            <div class="flex flex-row items-stretch justify-center w-full space-x-8">
+                
+                <!-- Card Right 2 -->
+                <%= 
+                    render partial: 'components/Index/carddx',
+                    locals: {
+                        alt: 'Image Image',
+                        src: '/images/carddx.png',
+                        title: 'STREAMING LIKE YOU’RE IN THE SAME ROOM',
+                        text: 'Hight quality and low latency streaming makes it feel like you’re hanging on the couch with youre friends while playing a game, watch shows, looking at photos, or idk doing homework or something.',
+                        background: '/images/travelinghero.jpg'
+                    }
+                %>
+                <!-- Card Left 2 -->
+                <%= 
+                    render partial: 'components/Index/cardsx',
+                    locals: {
+                        alt: 'Image Image',
+                        src: '/images/cardsx.png',
+                        title: 'MAKE YOUR GROUP CHATS MORE FUN',
+                        text: 'Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.',
+                        background: '/images/travelinghero.jpg'
+                    }
+                %>
+            </div>
+             <!-- Card Center 1 -->
+                <%= 
+                    render partial: 'components/Index/cardct',
+                    locals: {
+                        alt: 'Image Image',
+                        src: '/images/carddx.png',
+                        title: 'STREAMING LIKE YOU’RE IN THE SAME ROOM',
+                        text: 'Hight quality and low latency streaming makes it feel like you’re hanging on the couch with youre friends while playing a game, watch shows, looking at photos, or idk doing homework or something.',
+                        background: '/images/travelinghero.jpg'
+                    }
+                %>
             <!-- Titolo -->
             <%= render partial: 'components/Index/titolo' %>
             <!-- Footer -->
