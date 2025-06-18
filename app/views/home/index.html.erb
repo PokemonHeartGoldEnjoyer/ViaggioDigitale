@@ -18,7 +18,7 @@
                 }
             %>
             <!-- Card Row 1 -->
-            <div class="flex flex-row justify-center space-x-8">
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-5">
                 <!-- Card Right 1 -->
                 <%= 
                     render partial: 'components/index/carddx',
@@ -43,7 +43,7 @@
                 %>
             </div>
             <!-- Card Row 2 -->
-            <div class="flex flex-row justify-center space-x-8">
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-8 mt-5">
                 <!-- Card Right 2 -->
                 <%= 
                     render partial: 'components/index/carddx',
@@ -67,7 +67,8 @@
                     }
                 %>
             </div>
-             <!-- Card Center 1 -->
+            <!-- Card Center 1 -->
+            <div class="flex justify-center mt-5">
                 <%= 
                     render partial: 'components/index/cardct',
                     locals: {
@@ -78,6 +79,7 @@
                         background: '/images/greeceflag.jpg'
                     }
                 %>
+            </div>
             <!-- Titolo -->
             <%= render partial: 'components/index/titolo' %>
             <!-- Footer -->
