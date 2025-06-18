@@ -1,20 +1,22 @@
 <div class="flex items-center justify-center">
       <!-- Card Container with Image Background -->
-      <div class="flex items-center rounded-[70px] p-12 shadow-lg w-[800px] h-[600px]" style="background: url('<%= background %>') center center / cover no-repeat;">
+      <div class="flex items-center rounded-[70px] p-12 shadow-lg w-[800px] h-[600px] relative" style="background: url('<%= background %>') center center / cover no-repeat;">
+            <!-- White overlay with 30% opacity -->
+            <div class="absolute inset-0 bg-white opacity-40 rounded-[70px] pointer-events-none"></div>
             <!-- Gradient Image Section (Left) -->
-            <div class="flex-shrink-0 mr-8">
+            <div class="flex-shrink-0 mr-8 z-10">
                   <div class="w-[400px] h-[400px] rounded-[40px] relative flex items-center justify-center" style="background: linear-gradient(180deg, #000 0%, #f149c6 100%);">
                         <img
                               src="<%= src %>"
-                              alt="Discord Screen"
+                              alt="<%= alt %>"
                               class="w-[600px] h-[500px] object-contain"
                         />
                   </div>
             </div>
             <!-- Text Section (Right) -->
-            <div class="flex flex-col flex-1 items-end justify-center ml-8">
-                    <div class="font-bold text-3xl text-white mb-3 text-right"><%= title %></div>
-                    <div class="text-lg text-white text-right"><%= text %></div>
+            <div class="flex flex-col flex-1 items-end justify-center ml-8 z-10">
+                    <div class="font-bold text-3xl text-black mb-3 text-right"><%= title %></div>
+                    <div class="text-lg text-black text-right"><%= text %></div>
             </div>
       </div>
 </div>
