@@ -1,0 +1,126 @@
+<body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #000000 2%, #DD0000 20%, #FFCC00 100%); background-size: cover; background-repeat: no-repeat;">
+    <div class='flex flex-col items-center justify-center w-full'>
+        <!-- Privacy -->
+        <%= 
+            render partial: 'components/privacy',
+            locals: {
+                title: 'GlobeXplore',
+                text: "Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare del sito e assistere nelle nostre attività di marketing.",
+            }
+        %>
+        <div class='flex flex-col items-center justify-center space-y-30 w-full'>
+            <!-- Navbar -->
+            <%= render partial: 'components/navbar'  %>
+            <!-- Hero -->
+            <%= 
+                render partial: 'components/extras/landinghero',
+                locals: {
+                    alt: 'Viaggio per la Germania',
+                    src: '/images/spagna.jpg',
+                    link: '#',
+                    title: "GERMANIA",
+                    text: "Viaggiare in Germania è un incontro perfetto tra tradizione e innovazione: puoi perderti tra i castelli da fiaba della Baviera e ritrovarti in una Berlino vibrante e creativa, dove ogni strada racconta storie di rinascita e cultura.",
+                    bottone: 'Prenota ora'
+                }
+            %>
+            <!-- Card Row 1 -->
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-5">
+                <!-- Card Right 1 -->
+                <%= 
+                    render partial: 'components/extras/carddx',
+                    locals: {
+                        alt: 'Barcellona',
+                        src: '/images/barcellonacard.jpeg',
+                        title: '',
+                        text:"
+                        Giorno 1 - 15/03/2025: Arrivo a Barcellona 14:00 - Arrivo all'Aeroporto di Barcellona sbarco e ritiro bagagli. 14:30 - Trasporto all'Airbnb per il Sud fino a Collblanc, poi cambia con quello per Diagonal e cammina fino al tuo Airbnb (opzioni consigliate: Casa Gracia o appartamenti in zona Eixample). 15:30 Arrivo e check-in al tuo Airbnb. 17:00 - Passeggiata a Gracia Esplora il quartiere di Gracia, famoso per piazze ecaffè locali. 20:00 - Cena economica
+                        ",
+                        background: '/images/'
+                    }
+                %>
+                <!-- Card Left 1 -->
+                <%= 
+                    render partial: 'components/extras/cardsx',
+                    locals: {
+                        alt: 'Sagrada Familia',
+                        src: '/images/sagradafamiliacard.jpg',
+                        title: '',
+                        text:'
+                        Giorno 2 - 16/03/2025: Sagrada Familia e città 08:00 - Colazione Colazione in un caffè locale. 09:00 - Visita alla Sagrada Familia (ingresso 26€, visita di 1,5h). 11:00 - Passeggiata a Eixample Esplora il quartiere di Eixample e Passeig de Gràcia. 13:00 - Pranzo economico Pranzo a Cervecería 100 Montaditos, piatti tipici spagnoli economici. 14:30 - Visita al Camp Nou Metropolitana e Les Corts, visita al Museo del Camp Nou (12€, 1-1.5h). 16:30 - Tempo libero fai shopping in zona Plaza Cataluña 20:00 - Cena
+                        ',
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Card Center 1 -->
+            <div class="flex justify-center mt-5">
+                <%= 
+                    render partial: 'components/extras/cardct',
+                    locals: {
+                        alt: 'Parco Güell',
+                        src: '/images/parcoguellcard.jpg',
+                        title: '',
+                        text: "
+                            Giorno 3 – 17/03/2025:
+                            Giornata dedicata all’esplorazione di Barcellona con i mezzi pubblici. Dopo colazione in un caffè locale, passeggiata lungo La Rambla e visita al Mercato della Boqueria. In tarda mattinata, visita al Parco Güell. Pranzo sul mare al ristorante La Mar Salada. Nel pomeriggio, passeggiata nel Barrio Gótico con visita alla Cattedrale. Rientro in Airbnb e cena finale con tapas alla Cervecería Catalana.
+                            Giorno 4 – 18/03/2025:
+                            Colazione in Airbnb, check-out e trasferimento in aeroporto.
+                            ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+             <!-- Titolo -->
+            <%= 
+                render partial: 'components/extras/titolo',
+                locals: {
+                    titolo1: 'PIÙ CHE DESTINAZIONI,',
+                    titolo2: ' CREIAMO RICORDI.',
+                    button: 'Inizia un nuovo viaggio'
+                } 
+            %>
+            <!-- Card Row 2 -->
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-8 mt-5">
+                <!-- Card Right 2 -->
+                <%= 
+                    render partial: 'components/extras/carddx',
+                    locals: {
+                        alt: 'Antonì Gaudì',
+                        src: '/images/antonigaudicard.jpg',
+                        title: 'Antonì Gaudì',
+                        text: '
+                        Antoni Gaudí è stato un architetto spagnolo di cultura catalana. Massimo esponente del modernismo catalano, pur essendo la personalità meno organica a tale movimento artistico di cui comunque condivideva i presupposti ideologici e tematici, li ha completati con una ispirazione personale basata principalmente su forme naturali.
+                        ',
+                        background: '/images/'
+                    }
+                %>
+                <!-- Card Left 2 -->
+                <%= 
+                    render partial: 'components/extras/cardsx',
+                    locals: {
+                        alt: 'Sagrada Familia',
+                        src: '/images/sagradafamiliacard2.jpg',
+                        title: 'Sagrada Familia',
+                        text:"
+                        Il Tempio Espiatorio della Sacra Famiglia (in spagnolo Templo Expiatorio de la Sagrada Familia; in catalano Temple Expiatori de la Sagrada Família) è una basilica minore spagnola di culto cattolico che si trova a Barcellona, capitale della Catalogna nonché la chiesa più alta al mondo con i suoi 172 metri d'altezza.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Footer -->
+            <%= 
+                render partial: 'components/footer',
+                locals: {
+                    text: 'GlobeXplore, Via XIII Martiri, 86, 30027 San Donà di Piave VE, Italia',
+                    link: 'https://www.donboscosandona.it',
+                    srcfacebook: '/images/facebook.png',
+                    facebook: 'https://www.facebook.com/donboscosandona',
+                    srcinstagram: '/images/instagram.png',
+                    instagram: 'https://www.instagram.com/donboscosandona/',
+                    logo: '/images/airplanelogo.png',
+                }
+            %>
+        </div>
+    </div>
+</body>

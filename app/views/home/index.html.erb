@@ -2,7 +2,7 @@
     <div class='flex flex-col items-center justify-center w-full'>
         <!-- Privacy -->
         <%= 
-            render partial: 'components/index/privacy',
+            render partial: 'components/privacy',
             locals: {
                 title: 'GlobeXplore',
                 text: "Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare del sito e assistere nelle nostre attività di marketing.",
@@ -10,7 +10,7 @@
         %>
         <div class='flex flex-col items-center justify-center space-y-30 w-full'>
             <!-- Navbar -->
-            <%= render partial: 'components/index/navbar'  %>
+            <%= render partial: 'components/navbar'  %>
             <!-- Hero -->
             <%= 
                 render partial: 'components/index/landinghero',
@@ -107,43 +107,15 @@
             %>
             <!-- Footer -->
             <%= 
-                render partial: 'components/index/footer',
+                render partial: 'components/footer',
                 locals: {
-                    footer: [ 
-                        { title: "Product"},
-                        { text: "Download" },
-                        { text: "Nitro" },
-                        { text: "Status" },
-                        { text: "App Directory" },
-
-                        {title1: "Company"},
-                        { text1: "About" },
-                        { text1: "Jobs" },
-                        { text1: "Brand" },
-                        { text1: "Newsroom" },
-
-                        { title2: "Resources" },
-                        { text2: "College" },
-                        { text2: "Support" },
-                        { text2: "Safety" },
-                        { text2: "Blog" },
-                        { text2: "StreamKit" },
-                        { text2: "Creators" },
-                        { text2: "Community" },
-                        { text2: "Developers" },
-                        { text2: "Quests" },
-                        { text2: "Official 3rd Party Merch" },
-                        { text2: "Feedback" },
-
-                        { title3: "Policies" },
-                        { text3: "Terms" },
-                        { text3: "Privacy" },
-                        { text3: "Cookie Settings" },
-                        { text3: "Guidelines" },
-                        { text3: "Acknowledgements" },
-                        { text3: "Licenses" },
-                        { text3: "Company Information" },
-                    ]
+                    text: 'GlobeXplore, Via XIII Martiri, 86, 30027 San Donà di Piave VE, Italia',
+                    link: 'https://www.donboscosandona.it',
+                    srcfacebook: '/images/facebook.png',
+                    facebook: 'https://www.facebook.com/donboscosandona',
+                    srcinstagram: '/images/instagram.png',
+                    instagram: 'https://www.instagram.com/donboscosandona/',
+                    logo: '/images/airplanelogo.png',
                 }
             %>
         </div>

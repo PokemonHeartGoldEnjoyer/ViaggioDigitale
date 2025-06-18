@@ -1,0 +1,138 @@
+<body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #000091 5%, #FFFFFF 40%, #E1000F 80%); background-size: cover; background-repeat: no-repeat;">
+    <div class='flex flex-col items-center justify-center w-full'>
+        <!-- Privacy -->
+        <%= 
+            render partial: 'components/privacy',
+            locals: {
+                title: 'GlobeXplore',
+                text: "Cliccando su 'Accetta tutti i cookie', l'utente accetta di memorizzare i cookie sul dispositivo per migliorare la navigazione del sito, analizzare del sito e assistere nelle nostre attività di marketing.",
+            }
+        %>
+        <div class='flex flex-col items-center justify-center space-y-30 w-full'>
+            <!-- Navbar -->
+            <%= render partial: 'components/navbar'  %>
+            <!-- Hero -->
+            <%= 
+                render partial: 'components/extras/landinghero',
+                locals: {
+                    alt: 'Viaggio per la Francia',
+                    src: '/images/franciahero.jpg',
+                    link: '#',
+                    title: "FRANCIA",
+                    text: "Viaggiare in Francia è un invito alla bellezza in tutte le sue forme: dai tetti di Parigi al blu profondo della Costa Azzurra, ogni luogo racconta una storia di eleganza, cultura e passione.",
+                    bottone: 'Prenota ora'
+                }
+            %>
+            <!-- Card Row 1 -->
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-5">
+                <!-- Card Right 1 -->
+                <%= 
+                    render partial: 'components/extras/carddx',
+                    locals: {
+                        alt: 'Parigi CDG',
+                        src: '/images/paristerminal.jpg',
+                        title: '',
+                        text:"
+                       Arrivo a Parigi CDG alle 14:00 e trasferimento all’AirB&B (costo taxi: 40-50€). Check-in alle 15:00 e relax. Alle 16:30 visita della Torre Eiffel (secondo piano e cima: 27,50€) con vista da Trocadéro. Alle 19:30 cena in un ristorante tradizionale vicino alla Torre Eiffel o a Montmartre.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+                <!-- Card Left 1 -->
+                <%= 
+                    render partial: 'components/extras/cardsx',
+                    locals: {
+                        alt: 'Louvre',
+                        src: '/images/louvrecard.jpg',
+                        title: '',
+                        text:'
+                       Colazione alle 08:00, poi visita al Louvre alle 09:00 (ingresso: 39,90€). Alle 12:30 passeggiata nei Giardini delle Tuileries, poi pranzo a Le Marais. Alle 15:00 visita a Notre-Dame, poi passeggiata lungo la Senna e visita alla Sainte-Chapelle. Cena alle 19:30 in ristorante tipico come Café de Flore.
+                        ',
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Card Center 1 -->
+            <div class="flex justify-center mt-5">
+                <%= 
+                    render partial: 'components/extras/cardct',
+                    locals: {
+                        alt: 'Basilica del Sacré-Cœur',
+                        src: '/images/sacrocuorecard.jpg',
+                        title: '',
+                        text: "
+                            Colazione alle 08:00 e visita a Montmartre alle 09:00, con tappa alla Basilica del Sacré-Cœur. Alle 11:00 passeggiata tra le vie e Place du Tertre. Pranzo alle 12:30 con piatti tipici. Alle 14:00 ritorno in AirB&B e partenza per Berlino (volo: 50€ - 100€).
+                            ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+             <!-- Titolo -->
+            <%= 
+                render partial: 'components/extras/titolo',
+                locals: {
+                    titolo1: 'PIÙ CHE DESTINAZIONI,',
+                    titolo2: ' CREIAMO RICORDI.',
+                    button: 'Inizia un nuovo viaggio'
+                } 
+            %>
+            <!-- Card Row 2 -->
+            <div class="flex sm:flex-row flex-col justify-center items-center sm:space-x-5 space-x-0 sm:space-y-0 space-y-8 mt-5">
+                <!-- Card Right 2 -->
+                <%= 
+                    render partial: 'components/extras/carddx',
+                    locals: {
+                        alt: 'Il Mondo del Cabaret',
+                        src: '/images/montmartrecard.jpg',
+                        title: 'Il Mondo del Cabaret',
+                        text: '
+                       Il viaggio inizia a Montmartre, tra artisti di strada, la Basilica del Sacré-Cœur e l’iconico Moulin Rouge. Vivi l’atmosfera bohémien e goditi uno spettacolo con il famoso can-can. Il giorno dopo, visita luoghi simbolo del cabaret come il Folies Bergère, l’Opéra Garnier e Le Lido.
+                        ',
+                        background: '/images/'
+                    }
+                %>
+                <!-- Card Left 2 -->
+                <%= 
+                    render partial: 'components/extras/cardsx',
+                    locals: {
+                        alt: 'luoghi leggendari del Cabaret',
+                        src: '/images/lapinagilecard.jpg',
+                        title: 'luoghi leggendari del Cabaret',
+                        text:"
+                        Scopri le origini del cabaret al Museo dedicato, poi visita caffè storici e il Lapin Agile, frequentato da Picasso. Un tour guidato ti porterà nei cabaret storici come il Moulin de la Galette e Le Chat Noir, culla della cultura artistica parigina.
+                        ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Card Center 1 -->
+            <div class="flex justify-center mt-5">
+                <%= 
+                    render partial: 'components/extras/cardct',
+                    locals: {
+                        alt: 'Giorno 5 e consigli pratici',
+                        src: '/images/sacrocuorecard.jpg',
+                        title: 'Giorno 5 e consigli pratici',
+                        text: "
+                            Esplora il cabaret contemporaneo con spettacoli innovativi al Crazy Horse e una nuova serata al Moulin Rouge. Prenota i biglietti in anticipo (87–250€) e indossa abiti eleganti. Usa trasporti pubblici con il Navigo Pass (7,50€/giorno) per muoverti comodamente in città.
+                            ",
+                        background: '/images/'
+                    }
+                %>
+            </div>
+            <!-- Footer -->
+            <%= 
+                render partial: 'components/footer',
+                locals: {
+                    text: 'GlobeXplore, Via XIII Martiri, 86, 30027 San Donà di Piave VE, Italia',
+                    link: 'https://www.donboscosandona.it',
+                    srcfacebook: '/images/facebook.png',
+                    facebook: 'https://www.facebook.com/donboscosandona',
+                    srcinstagram: '/images/instagram.png',
+                    instagram: 'https://www.instagram.com/donboscosandona/',
+                    logo: '/images/airplanelogo.png',
+                }
+            %>
+        </div>
+    </div>
+</body>
