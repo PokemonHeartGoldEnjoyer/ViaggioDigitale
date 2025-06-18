@@ -1,0 +1,24 @@
+<div class="flex items-center justify-center ">
+      <!-- Card Container with Image Background -->
+      <div class="flex flex-row items-center rounded-[70px] p-12 shadow-lg w-[800px] h-[600px] relative justify-center" style="background: url('<%= background %>') center center / cover no-repeat;">
+            <!-- White overlay with 30% opacity -->
+            <div class="absolute inset-0 bg-white opacity-50 rounded-[70px] pointer-events-none"></div>
+            <!-- Gradient Image Section (Left) -->
+            <div class="flex-shrink-0 z-10">
+                  <div class="w-[350px] h-[350px] rounded-[40px] relative flex items-center justify-center" style="background: linear-gradient(180deg, #000 0%, #f149c6 100%);">
+                        <img
+                              src="<%= src %>"
+                              alt="<%= alt %>"
+                              class="w-[300px] h-[250px] object-contain"
+                        />
+                  </div>
+            </div>
+            <!-- Content above overlay with blurred transparent background -->
+            <div class="flex flex-col flex-1 items-center justify-center ml-8 text-center max-w-[350px] break-words z-10">
+                  <div class="backdrop-blur-md bg-white/10 rounded-3xl p-5 shadow-md w-full">
+                        <div class="font-bold text-5xl text-black mb-3 break-words"><%= title %></div>
+                        <div class="text-xl font-bold text-black break-words"><%= text %></div>
+                  </div>
+            </div>
+      </div>
+</div>

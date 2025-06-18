@@ -1,13 +1,13 @@
 <body class="min-h-screen flex items-center justify-center" style="background: linear-gradient(135deg, #ffb347 0%, #ffeaa7 20%, #ff7675 70%); background-size: cover; background-repeat: no-repeat;">
     <div class='flex flex-col items-center justify-center w-full'>
         <!-- Privacy -->
-        <%= render partial: 'components/Index/privacy'  %>
+        <%= render partial: 'components/index/privacy'  %>
         <div class='flex flex-col items-center justify-center space-y-30 w-full'>
             <!-- Navbar -->
-            <%= render partial: 'components/Index/navbar'  %>
+            <%= render partial: 'components/index/navbar'  %>
             <!-- Hero -->
             <%= 
-                render partial: 'components/Index/landinghero',
+                render partial: 'components/index/landinghero',
                 locals: {
                     alt: 'Viaggio per il Sud Europa',
                     src: '/images/travelinghero.jpg',
@@ -18,72 +18,71 @@
                 }
             %>
             <!-- Card Row 1 -->
-            <div class="flex flex-row items-stretch justify-center w-full space-x-8">
+            <div class="flex flex-row justify-center space-x-8">
                 <!-- Card Right 1 -->
                 <%= 
-                    render partial: 'components/Index/carddx',
+                    render partial: 'components/index/carddx',
                     locals: {
-                        alt: 'Image Image',
+                        alt: 'Spagna',
                         src: '/images/carddx.png',
-                        title: 'STREAMING LIKE YOU’RE IN THE SAME ROOM',
-                        text: 'Hight quality and low latency streaming makes it feel like you’re hanging on the couch with youre friends while playing a game, watch shows, looking at photos, or idk doing homework or something.',
+                        title: 'SPAIN',
+                        text: 'Sole, colori, sapori e tradizioni ti aspettano tra le strade di Barcellona, le spiagge andaluse e i mercati vivaci di Madrid. Un viaggio pieno di calore, musica e meraviglia. ¡Pronto a partire?',
                         background: '/images/spainflag.jpg'
                     }
                 %>
                 <!-- Card Left 1 -->
                 <%= 
-                    render partial: 'components/Index/cardsx',
+                    render partial: 'components/index/cardsx',
                     locals: {
-                        alt: 'Image Image',
+                        alt: 'Francia',
                         src: '/images/cardsx.png',
-                        title: 'MAKE YOUR GROUP CHATS MORE FUN',
-                        text: 'Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.',
+                        title: 'FRANCE',
+                        text: 'Tra i boulevard di Parigi, i vigneti della Provenza e i profumi della Costa Azzurra, ogni angolo della Francia racconta eleganza, gusto e bellezza. Pronto a lasciarti ispirare?',
                         background: '/images/franceflag.jpg'
                     }
                 %>
             </div>
             <!-- Card Row 2 -->
-            <div class="flex flex-row items-stretch justify-center w-full space-x-8">
-                
+            <div class="flex flex-row justify-center space-x-8">
                 <!-- Card Right 2 -->
                 <%= 
-                    render partial: 'components/Index/carddx',
+                    render partial: 'components/index/carddx',
                     locals: {
-                        alt: 'Image Image',
+                        alt: 'Germania',
                         src: '/images/carddx.png',
-                        title: 'STREAMING LIKE YOU’RE IN THE SAME ROOM',
-                        text: 'Hight quality and low latency streaming makes it feel like you’re hanging on the couch with youre friends while playing a game, watch shows, looking at photos, or idk doing homework or something.',
+                        title: 'GERMANIA',
+                        text: 'Città moderne, castelli da fiaba e natura sorprendente: la Germania è il mix perfetto tra storia, innovazione e tradizione. Un viaggio autentico, tutto da esplorare.',
                         background: '/images/germanyflag.jpg'
                     }
                 %>
                 <!-- Card Left 2 -->
                 <%= 
-                    render partial: 'components/Index/cardsx',
+                    render partial: 'components/index/cardsx',
                     locals: {
-                        alt: 'Image Image',
+                        alt: 'Albania',
                         src: '/images/cardsx.png',
-                        title: 'MAKE YOUR GROUP CHATS MORE FUN',
-                        text: 'Use custom emoji, stickers, soundboard effects and more to add your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up in chat your way.',
+                        title: 'ALBANIA',
+                        text: 'Spiagge cristalline, montagne selvagge e ospitalità sincera. L’Albania è una perla nascosta del Mediterraneo, ideale per chi cerca autenticità e avventura.',
                         background: '/images/albaniaflag.jpg'
                     }
                 %>
             </div>
              <!-- Card Center 1 -->
                 <%= 
-                    render partial: 'components/Index/cardct',
+                    render partial: 'components/index/cardct',
                     locals: {
-                        alt: 'Image Image',
-                        src: '/images/carddx.png',
-                        title: 'STREAMING LIKE YOU’RE IN THE SAME ROOM',
-                        text: 'Hight quality and low latency streaming makes it feel like you’re hanging on the couch with youre friends while playing a game, watch shows, looking at photos, or idk doing homework or something.',
+                        alt: 'Grecia',
+                        src: '/images/cardsx.png',
+                        title: 'GREECE',
+                        text: 'Tra isole da sogno, templi antichi e tramonti infuocati, la Grecia è pura emozione. Cultura, mare e magia ti aspettano sotto il sole dell’Egeo.',
                         background: '/images/greeceflag.jpg'
                     }
                 %>
             <!-- Titolo -->
-            <%= render partial: 'components/Index/titolo' %>
+            <%= render partial: 'components/index/titolo' %>
             <!-- Footer -->
             <%= 
-                render partial: 'components/Index/footer',
+                render partial: 'components/index/footer',
                 locals: {
                     footer: [ 
                         { title: "Product"},
